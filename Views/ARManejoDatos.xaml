@@ -3,10 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RodriguezEvaluacionprogreso3.Views.ARMnejoDatos"
              Title="ARMnejoDatos">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    
+        <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            
+        </Grid.ColumnDefinitions>
+        <Label Text="Pais" Grid.Row="0" Grid.Column="0"/>
+        
+
+        <Entry x:Name="Lat"  Grid.Row="1" Grid.Column="0" />
+        
+
+        
+
+        <Label Text="Contagios:" Grid.Row="4" Grid.Column="0" />
+
+       
+
+        <Label Text="Pais:" Grid.Row="6" Grid.Column="0" />
+        <Label x:Name="countryLabel" Grid.Row="6" Grid.Column="1" />
+
+    </Grid>
+    
 </ContentPage>
