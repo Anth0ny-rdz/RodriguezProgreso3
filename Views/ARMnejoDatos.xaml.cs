@@ -7,9 +7,7 @@ public partial class ARMnejoDatos : ContentPage
 		InitializeComponent();
 	}
 
-	
-
-	static async Task Main(string[] args)
+	private async void Button_Clicked(object sender, EventArgs e)
 	{
 		using (HttpClient client = new HttpClient())
 		{
@@ -18,8 +16,8 @@ public partial class ARMnejoDatos : ContentPage
 			string apiKey = "938a4bdb0amsh90d5e61c6884148p146df6jsn79cb96e7755b";
 			string apiHost = "coronavirus-monitor-v2.p.rapidapi.com";
 
-			client.DefaultRequestHeaders.Add("X-RapidAPI-Key", apiKey);
-			client.DefaultRequestHeaders.Add("X-RapidAPI-Host", apiHost);
+			client.DefaultRequestHeaders.Add("938a4bdb0amsh90d5e61c6884148p146df6jsn79cb96e7755b", apiKey);
+			client.DefaultRequestHeaders.Add("coronavirus-monitor-v2.p.rapidapi.com", apiHost);
 
 			try
 			{
@@ -35,3 +33,6 @@ public partial class ARMnejoDatos : ContentPage
 		}
 	}
 }
+
+
+

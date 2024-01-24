@@ -6,9 +6,17 @@
     xmlns:local="clr-namespace:RodriguezEvaluacionprogreso3"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Datos API"
-        ContentTemplate="{DataTemplate local:ARMnejoDatos}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Datos"
+            
+           ContentTemplate="{DataTemplate local:Views.ARMnejoDatos}"
+            />
+
+        <ShellContent
+            Title="Lista"
+            ContentTemplate="{DataTemplate local:Views.ARLista}"
+             />
+    </TabBar>
 
 </Shell>
